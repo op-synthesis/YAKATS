@@ -101,6 +101,12 @@
 
 ---
 
+### Localization
+```
+✅ Fully localized in **Turkish** (TR) for the local market.
+```
+---
+
 ### Services Layer
 ```
 ✅ LocationService    — GPS coordinates
@@ -125,6 +131,7 @@
 ⬜ Anonymization service
 ⬜ Daily upload scheduler
 ⬜ Research participation toggle in settings
+⬜ Multi-language support (i18n) for global expansion
 ```
 
 ---
