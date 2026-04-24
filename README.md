@@ -1,16 +1,25 @@
-# YAKATS — Current State Summary
+# YAKATS — AI-Powered Allergy & Symptom Tracker
 
+### Built with Flutter · SQLite · Provider · GoRouter
 
 ---
 
-### The Core Promise
 > *"Track your allergy and respiratory symptoms, understand your triggers, and contribute anonymously to medical research."*
+
+---
+
+## Screenshots
+
+| Splash Screen | Home (Dark) | Home (Light) |
+|---|---|---|
+| <img src="https://github.com/user-attachments/assets/a1ed3066-a1c3-41e4-848c-6b734bf8de01" width="200"/> | <img src="https://github.com/user-attachments/assets/8e12cac1-959f-458c-a7e0-5bbfd9f76bde" width="200"/> | <img src="https://github.com/user-attachments/assets/986151be-a5a7-4157-832c-e1ddbfd04a01" width="200"/> |
 
 ---
 
 ## What the App Has Right Now
 
 ### Foundation & Infrastructure
+
 ```
 ✅ Flutter project — fully structured and running
 ✅ GoRouter navigation — all screens connected
@@ -25,6 +34,7 @@
 ---
 
 ### Symptom Logging System
+
 ```
 ✅ Full symptom logging form
 ✅ Symptom types (allergic, respiratory, skin, eye, etc.)
@@ -32,16 +42,17 @@
 ✅ Automatic timestamp on every log
 ✅ GPS location captured at log time
 ✅ Weather data captured at log time:
-     — temperature
-     — humidity
-     — wind speed
-     — weather condition
+— temperature
+— humidity
+— wind speed
+— weather condition
 ✅ All data saved to local SQLite database
 ```
 
 ---
 
 ### History & Data Review
+
 ```
 ✅ History screen — all past logs listed
 ✅ Filtering — by symptom type, date range
@@ -53,6 +64,7 @@
 ---
 
 ### AI / Analytics Engine
+
 ```
 ✅ Analytics engine — processes local symptom history
 ✅ Insights screen — visualizes patterns
@@ -66,15 +78,16 @@
 ---
 
 ### Notifications
+
 ```
 ✅ Awesome Notifications integration
 ✅ Risk-based push alerts
 ✅ Alert logging to local database
 ```
-
 ---
 
 ### Settings & Personalization
+
 ```
 ✅ Settings screen — full preferences UI
 ✅ Light / Dark theme toggle — persisted
@@ -87,13 +100,14 @@
 ---
 
 ### Design & UI
+
 ```
 ✅ Premium wellness app aesthetic
 ✅ Bento-inspired home screen layout
 ✅ Branded splash screen:
-     — Black background
-     — YAKATS wordmark (Syncopate font)
-     — Dark-blue animated arc
+— Black background
+— YAKATS wordmark (Syncopate font)
+— Dark-blue animated arc
 ✅ YAKATS logo widget — reusable
 ✅ Consistent design language across screens
 ✅ Light and dark theme fully styled
@@ -102,26 +116,17 @@
 ---
 
 ### Localization
-```
-✅ Fully localized in **Turkish** (TR) for the local market.
-```
----
 
-### Services Layer
 ```
-✅ LocationService    — GPS coordinates
-✅ WeatherService     — live weather data
-✅ DatabaseService    — all local CRUD operations
-✅ AnalyticsService   — pattern recognition
-✅ RiskPredictionService — risk scoring
-✅ AlertService       — alert logic
-✅ NotificationsService  — push delivery
-✅ BackgroundService  — passive monitoring
+✅ Fully localized in Turkish (TR) for the local market.
+⬜ English localization planned for the next sprint.
+> *Current UI localized in Turkish; English localization planned for global expansion.*
 ```
 
 ---
 
 ## What Is NOT Built Yet
+
 ```
 ⬜ Supabase integration
 ⬜ Anonymous research data upload
@@ -139,12 +144,12 @@
 ## By the Numbers
 
 ```
-Screens   :  8 existing  (+3 to be added)
-Services  :  9 existing  (+3 to be added)
-Models    :  4 existing  (+fields to be added)
-Widgets   :  2+ existing
-Database  :  local SQLite, fully working
-Backend   :  none yet — Supabase coming next
+Screens : 8 existing (+3 to be added)
+Services : 9 existing (+3 to be added)
+Models : 4 existing (+fields to be added)
+Widgets : 2+ existing
+Database : local SQLite, fully working
+Backend : none yet — Supabase coming next
 ```
 
 ---
@@ -152,65 +157,51 @@ Backend   :  none yet — Supabase coming next
 ## In Summary
 
 ```
+YAKATS is currently a fully working AI-powered personal allergy and respiratory symptom 
+tracking application built with Flutter.
 
-YAKATS is currently a fully working AI-powered personal allergy and respiratory symptom tracking application built with Flutter.
-
-The app allows users to log symptoms along with severity, and it automatically captures contextual data such as GPS location and
-weather conditions (temperature, humidity, wind speed, weather type). All data is stored locally using SQLite. Users can view
+The app allows users to log symptoms along with severity, and automatically captures 
+contextual data such as GPS location and weather conditions (temperature, humidity, 
+wind speed, weather type). All data is stored locally using SQLite. Users can view 
 their symptom history, filter it, see detailed entries, and delete logs if needed.
 
-An internal analytics engine processes the collected data to identify patterns and generate risk predictions. Based on these
- predictions, the app can trigger alerts and notifications. Alert history is also stored locally. Background monitoring
- and risk evaluation are already implemented.
+An internal analytics engine processes the collected data to identify patterns and 
+generate risk predictions. Based on these predictions, the app can trigger alerts 
+and notifications. Alert history is also stored locally. Background monitoring and 
+risk evaluation are already implemented.
 
-The app has a premium UI with light and dark themes, a branded splash screen with an animated arc design, and a structured
-navigation system using GoRouter. Settings include theme switching, alert preferences, and monitoring controls, all
+The app features a premium UI with light and dark themes, a branded splash screen 
+with an animated arc design, and a structured navigation system using GoRouter. 
+Settings include theme switching, alert preferences, and monitoring controls, all 
 persisted with SharedPreferences.
 
-There is currently no backend. All data stays on the device. Supabase integration for anonymized research data uploads has
- not yet been implemented.
+There is currently no backend. All data stays on the device. Supabase integration 
+for anonymized research data uploads has not yet been implemented.
 
-In short, YAKATS is already a complete local AI health-tracking app with analytics, alerts, and a polished design.
- The next step is to extend it into a privacy-safe, anonymous medical research contribution platform.
-
+In short, YAKATS is already a complete local AI health-tracking app with analytics, 
+alerts, and a polished design. The next step is to extend it into a privacy-safe, 
+anonymous medical research contribution platform.
 ```
-
 ---
 
 ## Note on Development
 
 ```
-
-This project was architected and built in a 72-hour sprint by a 17-year-old student (high school senior) as a
-demonstration of rapid prototyping, AI-assisted development, and system architecture.
+This project was architected and built in a **72-hour sprint** by a **17-year-old 
+student** (high school senior) as a demonstration of rapid prototyping, AI-assisted 
+development, and system architecture. Developed in **Türkiye** with a focus on local 
+compliance (KVKK) and real-world usability.
 ```
 ---
 
-
-## Some Screenshots
-
+*YAKATS — Synthesizing health data into actionable insights.*
 
 
-### Splash Screen
 
 
-<img width="720" height="1433" alt="splash_screen" src="https://github.com/user-attachments/assets/a1ed3066-a1c3-41e4-848c-6b734bf8de01" />
-
----
-
-### Home Screen Dark
 
 
-<img width="720" height="1487" alt="home_dark" src="https://github.com/user-attachments/assets/8e12cac1-959f-458c-a7e0-5bbfd9f76bde" />
 
----
 
-### Home Screen Light
 
-<img width="720" height="1488" alt="home_light" src="https://github.com/user-attachments/assets/986151be-a5a7-4157-832c-e1ddbfd04a01" />
 
----
-
-"Current UI localized in Turkish; English localization planned for the next sprint."
-
----
